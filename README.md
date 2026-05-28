@@ -1,176 +1,85 @@
-# Machine Learning and Deep Learning-Based Multi-Sensor Acoustic Event Classification and Localization of Motor Faults
+# Machine Learning-Based Multi-Sensor Acoustic Event Classification and Localization of Motor Faults
 
-## Detailed Project Description
+## Machine Learning Project Description
 
-This project presents an advanced intelligent fault diagnosis and monitoring system for industrial motors using Machine Learning (ML) and Deep Learning (DL) techniques integrated with multi-sensor acoustic signal analysis. The primary objective of the system is to detect, classify, and localize motor faults efficiently by analyzing acoustic signals generated during motor operation under different working conditions.
+This project presents an intelligent Machine Learning-based system for acoustic event classification and localization of motor faults using multi-sensor acoustic signal analysis. The primary objective of the system is to identify and classify different motor fault conditions by analyzing acoustic signals generated during motor operation.
 
-In industrial environments, unexpected motor failures can lead to equipment damage, production downtime, increased maintenance costs, and operational safety issues. Traditional maintenance methods often fail to identify faults at an early stage. To overcome these limitations, this project introduces a predictive maintenance and intelligent monitoring approach using acoustic event classification techniques.
+In industrial environments, early fault detection is essential to prevent unexpected equipment failures, reduce maintenance costs, and improve operational reliability. Traditional monitoring techniques often fail to provide accurate real-time fault diagnosis. To address these challenges, this project introduces a predictive maintenance approach using acoustic signal processing and supervised machine learning algorithms.
 
-The proposed system utilizes multiple acoustic sensors to capture sound signals from motors operating under normal and faulty conditions. The collected acoustic data is processed and analyzed using signal processing, feature extraction, machine learning, and deep learning algorithms to accurately identify different fault categories.
+The system utilizes multiple acoustic sensors to capture sound signals from motors operating under normal and faulty conditions. The collected acoustic data is preprocessed, normalized, and transformed into structured datasets for feature extraction and classification tasks. Multiple machine learning algorithms were implemented and evaluated to compare their performance in fault classification and localization.
 
-The project dataset consists of multiple fault condition recordings including normal operation and various motor fault scenarios. Acoustic signals collected from multiple sensors improve the reliability and robustness of the fault diagnosis system by enabling multi-sensor data fusion and enhanced localization accuracy.
+The project includes classification of various motor fault conditions such as normal operation and multiple fault categories. Feature extraction and data preprocessing techniques were applied to improve model efficiency and classification accuracy.
+
+Several supervised machine learning models were trained and tested using the prepared acoustic dataset, including:
+
+*Logistic Regression
+* Support Vector Machine (SVM)
+* XGBoost Classifier
+* Random Forest Classifier
+* Decision Tree Classifier
+* K-Nearest Neighbors (KNN)
+* LightGBM
+* CatBoost
+* Artificial Neural Networks (ANN)
+* Naive Bayes Classifier
 
 
+Among all implemented models, the CATBoost classifier achieved the highest classification accuracy and overall performance for motor fault diagnosis. CATBoost demonstrated superior capability in handling complex acoustic feature patterns and improving fault classification efficiency compared to other machine learning approaches.
 
-# System Workflow
+The proposed system enables:
 
-The overall workflow of the proposed system consists of the following stages:
+* Acoustic event classification
+* Intelligent motor fault diagnosis
+* Multi-class fault identification
+* Predictive maintenance support
+* Multi-sensor data analysis
+* Improved fault localization accuracy
 
-1. Acoustic Signal Acquisition
-   Multiple acoustic sensors capture sound signals generated from motors operating under different conditions.
+The project provides a scalable and efficient solution for industrial condition monitoring and predictive maintenance applications. By integrating machine learning techniques with multi-sensor acoustic analysis, the system enhances industrial automation, operational safety, and intelligent fault prediction capabilities.
 
-2. Data Preprocessing
-   Raw acoustic signals are filtered, normalized, and cleaned to remove unwanted noise and improve signal quality.
 
-3. Feature Extraction
-   Important acoustic features are extracted from the processed signals for classification and analysis.
+**Accurcy results**
 
-4. Dataset Preparation
-   The extracted features are organized into structured datasets representing different motor conditions.
+<img width="915" height="761" alt="image" src="https://github.com/user-attachments/assets/3b0c9aa4-47a6-4450-a9ef-c4716bacad6c" />
 
-5. Model Training and Testing
-   Machine Learning and Deep Learning models are trained using labeled datasets to classify motor fault conditions.
+<img width="857" height="772" alt="image" src="https://github.com/user-attachments/assets/d75b4b81-4049-4ab6-98f8-f37f0f8ad5fd" />
 
-6. Fault Classification and Localization
-   The trained models predict motor conditions and identify fault categories with improved accuracy.
+**Localization of microphone **
 
-7. Performance Evaluation
-   Classification accuracy, precision, recall, and overall model performance are evaluated and compared.
+<img width="1113" height="827" alt="image" src="https://github.com/user-attachments/assets/5d93711a-9604-4465-a52a-a73afb6820c6" />
+
+
 
 ---
 
-# Machine Learning Models Implemented
+# Technologies Used
 
-The project implements multiple supervised machine learning algorithms for acoustic event classification and motor fault diagnosis.
+* Python
+* Machine Learning
+* XGBoost
+* Scikit-learn
+* NumPy
+* Pandas
+* Librosa
+* Matplotlib
 
-## Models Used
-
-### Support Vector Machine (SVM)
-
-Support Vector Machine was implemented for high-accuracy motor fault classification. SVM effectively separates fault classes using optimal hyperplanes and achieved strong classification performance in the project.
-
-### Random Forest Classifier
-
-Random Forest was used for ensemble-based fault classification by combining multiple decision trees to improve prediction stability and reduce overfitting.
-
-### Decision Tree Classifier
-
-Decision Tree algorithms were implemented for interpretable classification of acoustic fault patterns based on extracted signal features.
-
-### K-Nearest Neighbors (KNN)
-
-KNN was utilized for distance-based classification of motor acoustic events using neighboring feature similarities.
-
-### Logistic Regression
-
-Logistic Regression was applied for probabilistic fault classification and binary/multi-class prediction analysis.
-
-### Naive Bayes Classifier
-
-Naive Bayes classification was used for probabilistic analysis and efficient classification of acoustic feature distributions.
-
-
-
-# Deep Learning Models Implemented
-
-In addition to traditional machine learning approaches, advanced deep learning architectures were implemented to improve automatic feature learning and temporal acoustic signal analysis.
-
-## Deep Learning Architectures
-
-### Convolutional Neural Network (CNN)
-
-CNN models were implemented for automatic extraction of spatial acoustic features from sensor data. CNN significantly improves feature learning capability and classification accuracy.
-
-### Long Short-Term Memory (LSTM)
-
-LSTM networks were utilized for sequential and time-series acoustic signal analysis. LSTM effectively captures temporal dependencies and long-term acoustic patterns in motor signals.
-
-### Recurrent Neural Network (RNN)
-
-RNN models were implemented for continuous sequential processing of acoustic sensor data and dynamic motor condition analysis.
-
-
-
-# Multi-Sensor Acoustic Analysis
-
-The proposed system employs a multi-sensor acoustic monitoring architecture where multiple sensors simultaneously capture motor-generated sound signals. This multi-sensor approach enhances:
-
-* Fault detection reliability
-* Localization accuracy
-* Noise robustness
-* Classification performance
-* System scalability
-
-By integrating data from multiple sensors, the system improves the capability to identify fault locations and distinguish between different motor fault conditions more effectively than single-sensor systems.
-
-
-
-# Technologies and Tools Used
-
-| Technology         | Purpose                    |
-| ------------------ | -------------------------- |
-| Python             | Model Development          |
-| Machine Learning   | Fault Classification       |
-| Deep Learning      | Advanced Signal Analysis   |
-| Scikit-learn       | ML Algorithms              |
-| TensorFlow / Keras | Deep Learning Models       |
-| NumPy              | Numerical Computation      |
-| Pandas             | Dataset Processing         |
-| Librosa            | Audio Signal Processing    |
-| Matplotlib         | Visualization              |
-| Google Colab       | Model Training Environment |
-
-
-
-# Key Features
-
-* Multi-sensor acoustic signal analysis
-* Intelligent motor fault diagnosis
-* Machine Learning-based classification
-* Deep Learning-based feature extraction
-* Acoustic event detection
-* Motor fault localization
-* Predictive maintenance support
-* Real-time monitoring capability
-* Comparative model performance analysis
-
-
+---
 
 # Applications
 
+* Predictive Maintenance
 * Industrial Motor Monitoring
-* Predictive Maintenance Systems
 * Smart Manufacturing
+* Fault Diagnosis Systems
 * Industrial Automation
-* Intelligent Fault Diagnosis
 * Condition Monitoring Systems
-* Acoustic Health Monitoring
-* Industry 4.0 Applications
 
-
-
-# Future Scope
-
-The proposed system can be further enhanced by integrating:
-
-* Real-time IoT-based monitoring
-* Edge AI deployment
-* Cloud-based analytics platforms
-* Advanced transformer architectures
-* Wireless sensor networks
-* Real-time dashboard visualization
-* Federated learning techniques
-* Adaptive self-learning fault prediction systems
-
-Future improvements can significantly enhance industrial reliability, automation efficiency, and intelligent predictive maintenance capabilities.
-
-
+---
 
 # Conclusion
 
-This project demonstrates an intelligent and efficient approach for acoustic event classification and localization of motor faults using Machine Learning and Deep Learning techniques integrated with multi-sensor data analysis. The proposed system improves fault diagnosis accuracy, enhances predictive maintenance capability, and supports real-time industrial monitoring applications.
+This project demonstrates an effective machine learning-based approach for acoustic event classification and localization of motor faults using multi-sensor acoustic data analysis. Comparative evaluation of multiple classification models identified XGBoost as the best-performing algorithm for accurate motor fault diagnosis and predictive maintenance applications.
 
-By combining advanced ML and DL algorithms with multi-sensor acoustic analysis, the system provides a scalable and robust solution for intelligent industrial motor health monitoring and fault prediction.
 
 
 # Author
