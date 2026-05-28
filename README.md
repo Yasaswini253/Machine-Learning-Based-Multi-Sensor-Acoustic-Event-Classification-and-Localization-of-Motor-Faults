@@ -34,19 +34,20 @@ The proposed system enables:
 * Predictive maintenance support
 * Multi-sensor data analysis
 * Improved fault localization accuracy
+* Live dashboard prediction of Localization
 
 The project provides a scalable and efficient solution for industrial condition monitoring and predictive maintenance applications. By integrating machine learning techniques with multi-sensor acoustic analysis, the system enhances industrial automation, operational safety, and intelligent fault prediction capabilities.
 
 
 **Accurcy results**
 
-<img width="915" height="761" alt="image" src="https://github.com/user-attachments/assets/3b0c9aa4-47a6-4450-a9ef-c4716bacad6c" />
+<img width="715" height="561" alt="image" src="https://github.com/user-attachments/assets/3b0c9aa4-47a6-4450-a9ef-c4716bacad6c" />
 
-<img width="857" height="772" alt="image" src="https://github.com/user-attachments/assets/d75b4b81-4049-4ab6-98f8-f37f0f8ad5fd" />
+<img width="557" height="572" alt="image" src="https://github.com/user-attachments/assets/d75b4b81-4049-4ab6-98f8-f37f0f8ad5fd" />
 
 **Localization of microphone **
 
-<img width="1113" height="827" alt="image" src="https://github.com/user-attachments/assets/5d93711a-9604-4465-a52a-a73afb6820c6" />
+<img width="513" height="527" alt="image" src="https://github.com/user-attachments/assets/5d93711a-9604-4465-a52a-a73afb6820c6" />
 
 
 
